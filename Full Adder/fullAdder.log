@@ -1,0 +1,125 @@
+LTspice 24.1.10 for Windows
+Circuit: D:\AUC\Uni\Fall 25\Microelectronics\Project\Saif and adham\Full Adder\fullAdder.cir
+Start Time: Fri Dec 12 21:06:50 2025
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Model "pmos0p18": Oxide thickness thinner than recommended for a level 1 MOSFET.
+Instance "Mpmos1": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos1": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos2": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos2": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos3": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos3": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos4": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos4": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos5": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos5": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos6": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos6": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos7": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos7": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos8": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos8": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos9": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos9": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos10": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos10": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos11": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos11": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos12": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos12": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos13": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos13": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos14": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos14": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos15": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos15": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos16": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos16": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos17": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos17": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos18": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos18": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos19": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos19": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos20": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos20": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mpmos21": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos21": Width narrower than recommended for a level 1 MOSFET.
+Model "nmos0p18": Oxide thickness thinner than recommended for a level 1 MOSFET.
+Instance "Mnmos1": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos1": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos2": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos2": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos3": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos3": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos4": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos4": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos5": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos5": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos6": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos6": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos7": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos7": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos8": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos8": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos9": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos9": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos10": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos10": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos11": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos11": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos12": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos12": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos13": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos13": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos14": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos14": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos15": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos15": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos16": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos16": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos17": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos17": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos18": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos18": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos19": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos19": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos20": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos20": Width narrower than recommended for a level 1 MOSFET.
+Instance "Mnmos21": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos21": Width narrower than recommended for a level 1 MOSFET.
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.435 seconds.
+
+Files loaded:
+D:\AUC\Uni\Fall 25\Microelectronics\Project\Saif and adham\Full Adder\fullAdder.cir
+D:\AUC\Uni\Fall 25\Microelectronics\Project\Saif and adham\CMOS 0.18\MOSFET_models_0p5_0p18-3.inc
+
+tplh_cout=-2.06323370866e-08 FROM 2.24999998857e-08 TO 1.86766279915e-09
+tphl_cout=7.97073400328e-10 FROM 3.75e-08 TO 3.82970734003e-08
+tplh_sum=-6.95328828838e-10 FROM 2.49999993527e-09 TO 1.80467110644e-09
+tphl_sum=-2.92235605232e-08 FROM 4.75e-08 TO 1.82764394768e-08
+tpd_avg_sum: '(TpLH_Sum+TpHL_Sum)/2'=-1.4959444676e-08
+tpd_avg_cout: '(TpLH_Cout+TpHL_Cout)/2'=-9.91763184311e-09
+poweravg: AVG(I(VDD)*V(No1))=-0.0127910276375 FROM 0 TO 1e-07
+energy: INTEG(I(VDD)*V(No1))=-1.023282211e-09 FROM 0 TO 1e-07
+s_000: V(s)=-0.000297995371511 at 8e-08
+s_011: V(s)=4.12023764149e-07 at 6.8e-08
+s_010: V(s)=4.99796331376 at 6e-08
+s_001: V(s)=4.99827070382 at 5e-08
+s_101: V(s)=0.00156984920613 at 4.5e-08
+s_100: V(s)=4.9950598363 at 4e-08
+s_110: V(s)=0.000580092626036 at 2e-08
+s_111: V(s)=4.99974012375 at 6e-09
+cout_000: V(Cout)=-1.65189558174e-05 at 8e-08
+cout_011: V(Cout)=-0.0347309830566 at 6.8e-08
+cout_010: V(Cout)=1.96006852656e-05 at 6e-08
+cout_001: V(Cout)=1.1415607126 at 5e-08
+cout_101: V(Cout)=4.99996423721 at 4.5e-08
+cout_100: V(Cout)=0.000354895144265 at 4e-08
+cout_110: V(Cout)=5.00007651841 at 2e-08
+cout_111: V(Cout)=4.9998963356 at 6e-09

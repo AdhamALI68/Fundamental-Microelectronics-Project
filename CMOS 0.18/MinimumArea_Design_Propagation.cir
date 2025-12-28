@@ -1,0 +1,17 @@
+* CMOS inverter transient analysis, minimum area design
+.include "D:\AUC\Uni\Fall 25\Microelectronics\Project\Saif and adham\CMOS 0.18\MOSFET_models_0p5_0p18-3.inc"
+* supply sources
+VDD no1 0 1.8V
+VG no2 0 pulse(0v 1.8v 0 1p 1p 5n 10n)
+* MOSFETs
+Mpmos no3 no2 no1 no1 PMOS0P18 l=0.18u w=0.9u ad=0.486p as=0.486p pd=2.88u ps=2.88u
+Mnmos no3 no2 0 0 NMOS0P18 l=0.18u w=0.9u ad=0.486p as=0.486p pd=2.88u ps=2.88u
+* Resistor and Capacitor
+Rr1 no3 no4 1k
+Cc1 no4 0 0.2p
+* Transient analysis
+.tran 1p 10n
+.measure tran TpHL trig V(no2) val=0.9 rise=1 targ V(no4) val=0.9 fall=1
+.measure tran TpLH trig V(no2) val=0.9 fall=1 targ V(no4) val=0.9 rise=1
+.measure Tp param= '(TpHL+TpLH)/2'
+.END

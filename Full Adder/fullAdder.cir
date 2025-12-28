@@ -1,0 +1,116 @@
+* Full Adder, CMOS 0.18u
+.Include "D:\AUC\Uni\Fall 25\Microelectronics\Project\Saif and adham\CMOS 0.18\MOSFET_models_0p5_0p18-3.inc"
+
+* Power Supply
+VDD No1 0 DC 5V
+
+*Inputs, testing DC
+*Va   A    0   DC 5
+*Vb   B    0   DC 0
+*Vcin Cin  0   DC 5
+
+
+* Input pulses
+Va A 0 pulse(0 5 0 5n 5n 40n 100n)
+Vb B 0 pulse(0 5 0 5n 5n 20n 50n)
+Vcin Cin 0 pulse(0 5 0 5n 5n 10n 20n)
+
+* Inverters
+* InvA
+Mpmos1 NotA A No1 No1 PMOS0P18 L=0.18u W=0.9u AD=0.486p AS=0.486p PD=2.88u PS=2.88u
+Mnmos1 NotA A 0 0 NMOS0P18 L=0.18u W=0.9u AD=0.486p AS=0.486p PD=2.88u PS=2.88u
+
+* InvB
+Mpmos2 NotB B No1 No1 PMOS0P18 L=0.18u W=0.9u AD=0.486p AS=0.486p PD=2.88u PS=2.88u
+Mnmos2 NotB B 0 0 NMOS0P18 L=0.18u W=0.9u AD=0.486p AS=0.486p PD=2.88u PS=2.88u
+
+* InvCin
+Mpmos3 NotCin Cin No1 No1 PMOS0P18 L=0.18u W=0.9u AD=0.486p AS=0.486p PD=2.88u PS=2.88u
+Mnmos3 NotCin Cin 0 0 NMOS0P18 L=0.18u W=0.9u AD=0.486p AS=0.486p PD=2.88u PS=2.88u
+
+* PUN - S
+* A & notB & Cin
+Mpmos4 mo4 A No1 No1 PMOS0P18 L=0.18u W=5.4u AD=2.916p AS=2.916p PD=11.88u PS=11.88u
+Mpmos5 mo5 NotB mo4 mo4 PMOS0P18 L=0.18u W=5.4u AD=2.916p AS=2.916p PD=11.88u PS=11.88u
+Mpmos6 S Cin mo5 mo5 PMOS0P18 L=0.18u W=5.4u AD=2.916p AS=2.916p PD=11.88u PS=11.88u
+
+*notA & B & Cin
+Mpmos7 mo7 NotA No1 No1 PMOS0P18 L=0.18u W=5.4u AD=2.916p AS=2.916p PD=11.88u PS=11.88u
+Mpmos8 mo8 B mo7 mo7 PMOS0P18 L=0.18u W=5.4u AD=2.916p AS=2.916p PD=11.88u PS=11.88u
+Mpmos9 S Cin mo8 mo8 PMOS0P18 L=0.18u W=5.4u AD=2.916p AS=2.916p PD=11.88u PS=11.88u
+
+* A & B & notCin
+Mpmos10 mo10 A No1 No1 PMOS0P18 L=0.18u W=5.4u AD=2.916p AS=2.916p PD=11.88u PS=11.88u
+Mpmos11 mo11 B mo10 mo10 PMOS0P18 L=0.18u W=5.4u AD=2.916p AS=2.916p PD=11.88u PS=11.88u
+Mpmos12 S NotCin mo11 mo11 PMOS0P18 L=0.18u W=5.4u AD=2.916p AS=2.916p PD=11.88u PS=11.88u
+
+* notA & notB & notCin
+Mpmos13 mo13 NotA No1 No1 PMOS0P18 L=0.18u W=5.4u AD=2.916p AS=2.916p PD=11.88u PS=11.88u
+Mpmos14 mo14 NotB mo13 mo13 PMOS0P18 L=0.18u W=5.4u AD=2.916p AS=2.916p PD=11.88u PS=11.88u
+Mpmos15 S NotCin mo14 mo14 PMOS0P18 L=0.18u W=5.4u AD=2.916p AS=2.916p PD=11.88u PS=11.88u
+
+* PDN - S
+Mnmos4 S A N1 N1 NMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+Mnmos5 S NotB N1 N1 NMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+Mnmos6 S Cin N1 N1 NMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+Mnmos7 N1 NotA N2 N2 NMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+Mnmos8 N1 B N2 N2 NMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+Mnmos9 N1 Cin N2 N2 NMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+Mnmos10 N2 A N3 N3 NMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+Mnmos11 N2 B N3 N3 NMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+Mnmos12 N2 NotCin N3 N3 NMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+Mnmos13 N3 NotA 0 0 NMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+Mnmos14 N3 NotB 0 0 NMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+Mnmos15 N3 NotCin 0 0 NMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+
+* PUN - Cout
+Mpmos16 mo16 NotA No1 No1 PMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+Mpmos17 Cout NotB mo16 mo16 PMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+Mpmos18 mo18 NotCin No1 No1 PMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+Mpmos19 Cout NotA mo18 mo18 PMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+Mpmos20 mo20 B No1 No1 PMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+Mpmos21 Cout NotCin mo20 mo20 PMOS0P18 L=0.18u W=3.6u AD=1.944p AS=1.944p PD=8.28u PS=8.28u
+
+* PDN - Cout
+Mnmos16 Cout NotA N4 N4 NMOS0P18 L=0.18u W=2.7u AD=1.458p AS=1.458p PD=6.48u PS=6.48u
+Mnmos17 Cout NotB N4 N4 NMOS0P18 L=0.18u W=2.7u AD=1.458p AS=1.458p PD=6.48u PS=6.48u
+Mnmos18 N4 NotA N5 N5 NMOS0P18 L=0.18u W=2.7u AD=1.458p AS=1.458p PD=6.48u PS=6.48u
+Mnmos19 N4 NotCin N5 N5 NMOS0P18 L=0.18u W=2.7u AD=1.458p AS=1.458p PD=6.48u PS=6.48u
+Mnmos20 N5 NotB 0 0 NMOS0P18 L=0.18u W=2.7u AD=1.458p AS=1.458p PD=6.48u PS=6.48u
+Mnmos21 N5 NotCin 0 0 NMOS0P18 L=0.18u W=2.7u AD=1.458p AS=1.458p PD=6.48u PS=6.48u
+
+* Transient Analysis
+.Tran 0.1n 80n
+.Print Tran V(A) V(B) V(Cin) V(S) V(Cout)
+
+* Timing measurements
+.MEASURE Tran TpLH_Cout TRIG V(Cin) val=2.5 rise=2 targ V(Cout) val=2.5 rise=1
+.MEASURE Tran TpHL_Cout TRIG V(Cin) val=2.5 fall=2 targ V(Cout) val=2.5 fall=1
+.MEASURE Tran TpLH_Sum TRIG V(A) val=2.5 rise=1 targ V(S) val=2.5 rise=1
+.MEASURE Tran TpHL_Sum TRIG V(A) val=2.5 fall=1 targ V(S) val=2.5 fall=1
+.MEASURE Tran Tpd_Avg_Sum PARAM='(TpLH_Sum+TpHL_Sum)/2'
+.MEASURE Tran Tpd_Avg_Cout PARAM='(TpLH_Cout+TpHL_Cout)/2'
+
+* Power measurements
+.MEASURE Tran PowerAvg avg I(VDD)*V(No1) from 0 to 100n
+.MEASURE Tran Energy INTEG I(VDD)*V(No1) from 0 to 100n
+.MEASURE Tran s_000 FIND V(s) at=80n
+.MEASURE Tran s_011 FIND V(s) at=68n
+.MEASURE Tran s_010 FIND V(s) at=60n
+.MEASURE Tran s_001 FIND V(s) at=50n
+.MEASURE Tran s_101 FIND V(s) at=45n
+.MEASURE Tran s_100 FIND V(s) at=40n
+.MEASURE Tran s_110 FIND V(s) at=20n
+.MEASURE Tran s_111 FIND V(s) at=6n
+
+.MEASURE Tran cout_000 FIND V(Cout) at=80n
+.MEASURE Tran cout_011 FIND V(Cout) at=68n
+.MEASURE Tran cout_010 FIND V(Cout) at=60n
+.MEASURE Tran cout_001 FIND V(Cout) at=50n
+.MEASURE Tran cout_101 FIND V(Cout) at=45n
+.MEASURE Tran cout_100 FIND V(Cout) at=40n
+.MEASURE Tran cout_110 FIND V(Cout) at=20n
+.MEASURE Tran cout_111 FIND V(Cout) at=6n
+
+
+.End

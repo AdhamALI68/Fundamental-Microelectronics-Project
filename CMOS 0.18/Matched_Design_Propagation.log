@@ -1,0 +1,24 @@
+LTspice 24.1.10 for Windows
+Circuit: D:\AUC\Uni\Fall 25\Microelectronics\Project\Saif and adham\CMOS 0.18\Matched_Design_Propagation.cir
+Start Time: Fri Dec 12 03:25:35 2025
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Model "pmos0p18": Oxide thickness thinner than recommended for a level 1 MOSFET.
+Instance "Mpmos": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mpmos": Width narrower than recommended for a level 1 MOSFET.
+Model "nmos0p18": Oxide thickness thinner than recommended for a level 1 MOSFET.
+Instance "Mnmos": Length shorter than recommended for a level 1 MOSFET.
+Instance "Mnmos": Width narrower than recommended for a level 1 MOSFET.
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.045 seconds.
+
+Files loaded:
+D:\AUC\Uni\Fall 25\Microelectronics\Project\Saif and adham\CMOS 0.18\Matched_Design_Propagation.cir
+D:\AUC\Uni\Fall 25\Microelectronics\Project\Saif and adham\CMOS 0.18\MOSFET_models_0p5_0p18-3.inc
+
+tphl=1.97718603732e-10 FROM 4.99999993017e-13 TO 1.98218603725e-10
+tplh=1.98138216386e-10 FROM 5.00149999999e-09 TO 5.19963821637e-09
+tp: '(TpHL+TpLH)/2'=1.97928410059e-10
